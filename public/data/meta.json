@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "source": "https://api.dofusdu.de",
+  "channel": "dofus3beta",
+  "lang": "fr",
+  "gameVersion": "3.7.3.3",
+  "syncedAt": "2026-10-06T17:09:53.474Z",
+  "counts": {
+    "items": 4101,
+    "playerItems": 3796,
+    "excludedItems": 305,
+    "sets": 521,
+    "droppedSets": 416,
+    "ignoredSetItemIds": 1812
+  }
+}

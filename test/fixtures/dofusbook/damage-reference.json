@@ -1,0 +1,213 @@
+{
+  "_about": {
+    "source": "Onglets « Arme » et « Sorts » des pages DofusBook des stuffs 23428650 et 23428299 (fixtures voisines), relevés le 2026-10-06",
+    "dofusbookDataVersion": "3.7",
+    "notes": [
+      "Toutes les valeurs sont celles qu'affiche DofusBook, cible sans résistance (0 fixe, 0 %), options par défaut (maîtrise d'arme « normale » = 300 Puissance).",
+      "L'onglet Sorts affichait les sorts de CRÂ (appel /api/spells/class/9 : classe du stuff actif du visiteur) calculés avec les stats du stuff 23428650 (Féca). C'est la classe de l'utilisateur.",
+      "Les « ID » de sorts affichés par DofusBook (ex. 32426) sont les ids DofusDB de /spells/{id} (32426 = Flèche de Recul, niveaux [85234, 86143, 86144]) et figurent dans breeds.breedSpellsId ; ce ne sont pas des ids de spell-levels."
+    ]
+  },
+  "weapon": [
+    {
+      "stuff": 23428650,
+      "weapon": "Arc de Culbutœuf (official 32235)",
+      "context": {
+        "force": 825,
+        "chance": 826,
+        "agilite": 560,
+        "puissance": 440,
+        "maitrise": 300,
+        "doNeutre": 140,
+        "doEau": 140,
+        "doAir": 140,
+        "doCritique": 0,
+        "pctDoArmes": 0,
+        "malus": 0,
+        "critiqueTotal": 42,
+        "weaponCcRate": 20,
+        "weaponCcHits": 6
+      },
+      "lines": [
+        {
+          "line": "34 à 41 Dégât Neutre",
+          "normal": [
+            706,
+            822
+          ],
+          "crit": [
+            806,
+            922
+          ]
+        },
+        {
+          "line": "7 à 9 Vol Eau",
+          "normal": [
+            256,
+            289
+          ],
+          "crit": [
+            356,
+            389
+          ]
+        },
+        {
+          "line": "7 à 9 Vol Air",
+          "normal": [
+            238,
+            266
+          ],
+          "crit": [
+            322,
+            350
+          ]
+        },
+        {
+          "line": "total",
+          "normal": [
+            1200,
+            1377
+          ],
+          "crit": [
+            1484,
+            1661
+          ]
+        },
+        {
+          "line": "soin (vol)",
+          "normal": [
+            247,
+            277
+          ],
+          "crit": [
+            339,
+            369
+          ]
+        }
+      ],
+      "probabiliteCC": "62 %",
+      "moyenne": {
+        "degatsParTour": 1465,
+        "parPA": 293,
+        "regenParTour": 319
+      }
+    },
+    {
+      "stuff": 23428299,
+      "weapon": "Pelle du Professeur Xa (official 12112), FM élémentaire df-100 (dégâts → Feu) et va-100 (vol → Air), exo 8 Do Critique",
+      "context": {
+        "intelligence": 601,
+        "agilite": 600,
+        "puissance": 490,
+        "maitrise": 300,
+        "doFeu": 100,
+        "doAir": 92,
+        "doCritique": 189,
+        "pctDoArmes": 10,
+        "malusAffiche": "10 %",
+        "critiqueTotal": 95,
+        "weaponCcRate": 5,
+        "weaponCcHits": 3
+      },
+      "lines": [
+        {
+          "line": "15 à 21 Dégât Feu",
+          "normal": [
+            319,
+            408
+          ],
+          "crit": [
+            551,
+            639
+          ]
+        },
+        {
+          "line": "5 à 7 Vol Air",
+          "normal": [
+            164,
+            194
+          ],
+          "crit": [
+            396,
+            425
+          ]
+        },
+        {
+          "line": "total",
+          "normal": [
+            483,
+            602
+          ],
+          "crit": [
+            947,
+            1064
+          ]
+        },
+        {
+          "line": "soin (vol)",
+          "normal": [
+            82,
+            97
+          ],
+          "crit": [
+            198,
+            212
+          ]
+        }
+      ],
+      "probabiliteCC": "100 %",
+      "remarques": [
+        "Origine du « Malus : 10 % » inconnue (affiché par DofusBook pour cette arme sur un Huppermage).",
+        "L'en-tête de l'onglet affichait « 5 PA / 3 - 7 PO / 20% CC +6 » : valeurs restées de l'arme précédente (bug d'affichage DofusBook), à ignorer."
+      ]
+    }
+  ],
+  "weaponFormulaReconstructed": {
+    "_status": "retrouve EXACTEMENT les 20 bornes ci-dessus (normal et critique, deux stuffs)",
+    "mult": "(100 + carac de l'élément + puissance + maîtrise) / 100",
+    "normal": "floor( (floor(base × mult) + doFixeElement) × (1 + pctDoArmes/100) × (1 − malus/100) )",
+    "critique": "floor( (floor((base + ccHits) × mult) + doFixeElement + doCritique) × (1 + pctDoArmes/100) × (1 − malus/100) )",
+    "doFixeElement": "dommages fixes de l'élément + « Dommages » génériques (dmg)",
+    "soin": "floor(vol / 2), sommé sur les lignes de vol",
+    "probabiliteCC": "min(100, cc de l'arme (cc_bonus DofusBook) + Critique total)",
+    "nonDetermine": "place du % Do Mêlée/Distance (non appliqué dans l'exemple Pelle : option « Type de dégâts » non relevée), origine du malus 10 %"
+  },
+  "spellsCraWithStuff23428650": {
+    "context": {
+      "force": 825,
+      "intelligence": 100,
+      "chance": 826,
+      "agilite": 560,
+      "puissance": 440,
+      "doNeutre": 140,
+      "doTerre": 140,
+      "doFeu": 55,
+      "doEau": 140,
+      "doAir": 140,
+      "doCritique": 0,
+      "pctDoSorts": 0,
+      "pctDoDistance": 0,
+      "critiqueTotal": 42
+    },
+    "format": "nom|Niveau d'obtention|cible|min - max (normal)|min - max CC|… (une paire normal/CC par ligne d'effet ; « AE » = Allié / Ennemi, « E » = Ennemi ; « N charge(s) » = variante) |ID DofusBook|PA|portée|% CC du sort|% CC total",
+    "lines": [
+      "Flèche de Recul|Niveau 132|E|415 - 448|470 - 514 CC|AE|111|2 cases|ID 32426|3 PA|1 - 8 Portée|10% CC|52% CC tot|3 lancer par tour|2 lancer par cible",
+      "Flèche Éclatante|Niveau 162|E|195 - 215|97 - 107|221 - 247 CC|110 - 123 CC|AE|111|2 cases|ID 32449|3 PA|3 - 7 Portée|15% CC|57% CC tot|1 lancer par tour",
+      "Flèche Glacée|Niveau 133|AE|426 - 467|481 - 536 CC|1 charge|495 - 536|549 - 604 CC|ID 32435|3 PA|1 - 8 Portée|10% CC|52% CC tot|3 lancer par tour|2 lancer par cible|Cumul : 1",
+      "Flèche de Barrage|Niveau 134|E|208 - 227|240 - 259 CC|AE|55|1 case|ID 32443|3 PA|1 - 7 Portée|10% CC|52% CC tot|Lancer en ligne|2 lancer par tour",
+      "Carreaux Destructeurs|Niveau 172|E|631 - 686|726 - 795 CC|AE|166|3 case|ID 32459|4 PA|1 - 3 Portée|15% CC|57% CC tot|Lancer en ligne|2 lancer par tour|Cumul : 1",
+      "Flèche Vagabonde|Niveau 136|E|508 - 549|576 - 631 CC|ID 32455|3 PA|1 - 8 Portée|10% CC|52% CC tot|Lancer en ligne|Lancer en diag|2 lancer par tour",
+      "Flèche Évasive|Niveau 177|AE|55|1 case|E|358 - 399|413 - 454 CC|ID 32531|2 PA|2 - 8 Portée|5% CC|47% CC tot|3 lancer par tour|2 lancer par cible",
+      "Flèche Détonante|Niveau 149|AE|144 - 163|170 - 189 CC|E|144 - 163|170 - 189 CC|ID 32444|2 PA|1 - 8 Portée|5% CC|47% CC tot|3 lancer par tour|2 lancer par cible|Cumul : 1",
+      "Flèche Ralentissante|Niveau 192|AE|563 - 590|645 - 686 CC|ID 32439|4 PA|1 - 6 Portée|15% CC|57% CC tot|Lancer en ligne|2 lancer par tour|Cumul : 1",
+      "Flèche Persécutrice|Niveau 197|AE|514 - 558|257 - 279|591 - 646 CC|295 - 323 CC|Allié / Ennemi - Dans 1 tour|514 - 558|591 - 646 CC|ID 32433|4 PA|3 - 10 Portée|15% CC|57% CC tot|2 lancer par tour|1 lancer par cible|Cumul : 1",
+      "Flèche Cinglante|Niveau 159|AE|305 - 338|349 - 393 CC|ID 32427|2 PA|1 - 8 Portée|5% CC|47% CC tot|3 lancer par tour|2 lancer par cible|Cumul : 1",
+      "Flèche Assaillante|Niveau 135|AE|166|3 cases|E|453 - 494|522 - 563 CC|ID 32458|3 PA|1 - 7 Portée|10% CC|52% CC tot|2 lancer par tour|Cumul : 1",
+      "Flèche d'Immobilisation|Niveau 164|AE|290 - 317|331 - 358 CC|1 charge|317 - 344|358 - 385 CC|2 charges|344 - 372|385 - 413 CC|3 charges|372 - 399|413 - 440 CC|4 charges|399 - 426|440 - 467 CC|ID 32436|2 PA|1 - 8 Portée|5% CC|47% CC tot|4 lancer par tour|2 lancer par cible|Cumul : 4"
+    ],
+    "remarques": [
+      "Les nombres isolés après « AE » (111, 55, 166) avec « N case(s) » sont des dégâts de poussée/zone affichés par DofusBook, pas des dégâts de sort.",
+      "Les éléments des lignes ne sont pas dans le texte (icônes) : les retrouver via DofusDB (spell-levels du sort, effectElement) puis vérifier que la formule de l'arme, appliquée avec pctDoSorts à la place de pctDoArmes et sans maîtrise, retombe sur ces bornes."
+    ]
+  }
+}

@@ -1,0 +1,2419 @@
+[
+ {
+  "_reconstructed": "Reconstruit à partir du fixture compact ../stuff-23428650.json pour reproduire la forme RÉELLE de GET https://www.dofusbook.net/api/stuffs/dofus/public/23428650 (DOFUS.md §10.3). Repris tels quels du fixture : stuff.stuffItem/stuffCarac/stuffFm/stuffFmItem, items[].official/name/weapon, et les effets [code, type, min, max] devenus {name: code, type, min, max} SANS réordonner min/max (malus : min = valeur la plus proche de 0, comme DofusBook). Ajoutés : items[].id = l'id DofusBook de stuffItem pour l'emplacement ; items[].level lu dans NOTRE dataset (objets identiques). Supposés, non observés : fmGlobal/fmWeapon/fmStealWeapon/fmHealWeapon/fmItems recopient stuff.stuffFm / stuffFmItem ; stuffStats recopie stuffCarac ; cloths réduit à {id, name, pieces, effects} des paliers actifs ; user retiré.",
+  "stuff": {
+   "id": 23428650,
+   "name": "Terre Eau LvL 200 - Ret PM",
+   "character_class": 1,
+   "character_level": 200,
+   "tags": [
+    "ter",
+    "eau",
+    "pvm",
+    "rpm"
+   ],
+   "stuffItem": {
+    "a1": 4631,
+    "a2": 6742,
+    "am": 4630,
+    "ar": 6743,
+    "bo": 4629,
+    "br": 6744,
+    "ca": 2579,
+    "ce": 2580,
+    "ch": 2578,
+    "d1": 5162,
+    "d2": 1040,
+    "d3": 236,
+    "d4": 2829,
+    "d5": 1241,
+    "d6": 2697,
+    "fa": 2264,
+    "mo": null
+   },
+   "stuffCarac": {
+    "scroll_vi": 100,
+    "scroll_sa": 100,
+    "scroll_fo": 100,
+    "scroll_in": 100,
+    "scroll_ch": 100,
+    "scroll_ag": 100,
+    "base_vi": 0,
+    "base_sa": 0,
+    "base_fo": 265,
+    "base_in": 0,
+    "base_ch": 266,
+    "base_ag": 0
+   },
+   "stuffFm": {
+    "fm": {
+     "pm": 1,
+     "po": 1
+    },
+    "caracs": "pm,po",
+    "values": "1,1",
+    "weapon": null,
+    "steal": null,
+    "heal": null
+   },
+   "stuffFmItem": null
+  },
+  "items": [
+   {
+    "id": 4631,
+    "official": 21228,
+    "name": "Anneau Lunaire",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 201,
+      "max": 250
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 21,
+      "max": 30
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "ic",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": 101,
+      "max": 150
+     },
+     {
+      "name": "rpa",
+      "type": "E",
+      "min": 6,
+      "max": 10
+     }
+    ]
+   },
+   {
+    "id": 6742,
+    "official": 32234,
+    "name": "Anneau de Culbutœuf",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 201,
+      "max": 250
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 41,
+      "max": 50
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 41,
+      "max": 50
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 50
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dp",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "rtp",
+      "type": "E",
+      "min": 5,
+      "max": 8
+     }
+    ]
+   },
+   {
+    "id": 4630,
+    "official": 21227,
+    "name": "Collier Lunaire",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 251,
+      "max": 300
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 21,
+      "max": 40
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 51,
+      "max": 70
+     },
+     {
+      "name": "pa",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": 201,
+      "max": 250
+     },
+     {
+      "name": "fu",
+      "type": "E",
+      "min": 6,
+      "max": 10
+     },
+     {
+      "name": "rpm",
+      "type": "E",
+      "min": 6,
+      "max": 10
+     }
+    ]
+   },
+   {
+    "id": 6743,
+    "official": 32235,
+    "name": "Arc de Culbutœuf",
+    "level": 200,
+    "category_type": "W",
+    "effects": [
+     {
+      "name": "dn",
+      "type": "D",
+      "min": 34,
+      "max": 41
+     },
+     {
+      "name": "ve",
+      "type": "D",
+      "min": 7,
+      "max": 9
+     },
+     {
+      "name": "va",
+      "type": "D",
+      "min": 7,
+      "max": 9
+     },
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 351,
+      "max": 400
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 51,
+      "max": 70
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 51,
+      "max": 70
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 51,
+      "max": 70
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 21,
+      "max": 30
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "dp",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "rap",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     }
+    ],
+    "weapon": {
+     "pa_cost": 5,
+     "po_min": 3,
+     "po_max": 7,
+     "cc_rate": 0,
+     "cc_bonus": 20,
+     "cc_hits": 6
+    }
+   },
+   {
+    "id": 4629,
+    "official": 21226,
+    "name": "Bottes Lunaires",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 301,
+      "max": 350
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 51,
+      "max": 70
+     },
+     {
+      "name": "pm",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 11,
+      "max": 18
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 11,
+      "max": 18
+     },
+     {
+      "name": "so",
+      "type": "E",
+      "min": 4,
+      "max": 8
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": 301,
+      "max": 400
+     },
+     {
+      "name": "rpa",
+      "type": "E",
+      "min": 6,
+      "max": 10
+     },
+     {
+      "name": "rpm",
+      "type": "E",
+      "min": 6,
+      "max": 10
+     },
+     {
+      "name": "epa",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     }
+    ]
+   },
+   {
+    "id": 6744,
+    "official": 32236,
+    "name": "Disque de Culbutœuf",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 201,
+      "max": 250
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "po",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "dp",
+      "type": "E",
+      "min": 16,
+      "max": 25
+     },
+     {
+      "name": "rtp",
+      "type": "E",
+      "min": 4,
+      "max": 7
+     },
+     {
+      "name": "rfp",
+      "type": "E",
+      "min": 9,
+      "max": 12
+     }
+    ]
+   },
+   {
+    "id": 2579,
+    "official": 13131,
+    "name": "Cape d'Ogivol",
+    "level": 186,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 251,
+      "max": 300
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 2,
+      "max": 3
+     },
+     {
+      "name": "po",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "rc",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "rf",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     }
+    ]
+   },
+   {
+    "id": 2580,
+    "official": 13132,
+    "name": "Ceinture d'Ogivol",
+    "level": 195,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 251,
+      "max": 300
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 5
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "ta",
+      "type": "E",
+      "min": 4,
+      "max": 5
+     },
+     {
+      "name": "rpa",
+      "type": "E",
+      "min": 4,
+      "max": 5
+     },
+     {
+      "name": "rtp",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "ra",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     }
+    ]
+   },
+   {
+    "id": 2578,
+    "official": 13130,
+    "name": "Coiffe d'Ogivol",
+    "level": 193,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 301,
+      "max": 350
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     },
+     {
+      "name": "ic",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": 201,
+      "max": 300
+     },
+     {
+      "name": "rpm",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     },
+     {
+      "name": "rep",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     }
+    ]
+   },
+   {
+    "id": 5162,
+    "official": 22014,
+    "name": "Espryt",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "rpa",
+      "type": "E",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "name": "rpm",
+      "type": "E",
+      "min": 20,
+      "max": 20
+     },
+     {
+      "name": "epa",
+      "type": "E",
+      "min": -20,
+      "max": -20
+     },
+     {
+      "name": "epm",
+      "type": "E",
+      "min": -20,
+      "max": -20
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 14933,
+      "max": 1
+     }
+    ]
+   },
+   {
+    "id": 1040,
+    "official": 6980,
+    "name": "Dofus Vulbis",
+    "level": 180,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "pm",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 8396,
+      "max": 1
+     }
+    ]
+   },
+   {
+    "id": 236,
+    "official": 694,
+    "name": "Dofus Pourpre",
+    "level": 110,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 80,
+      "max": 80
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 8395,
+      "max": 1
+     },
+     {
+      "name": "at",
+      "type": "O",
+      "min": 186,
+      "max": 186
+     }
+    ]
+   },
+   {
+    "id": 2829,
+    "official": 7043,
+    "name": "Dofus des Glaces",
+    "level": 180,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     }
+    ]
+   },
+   {
+    "id": 1241,
+    "official": 7754,
+    "name": "Dofus Ocre",
+    "level": 160,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "pa",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 8394,
+      "max": 1
+     },
+     {
+      "name": "at",
+      "type": "O",
+      "min": 185,
+      "max": 185
+     }
+    ]
+   },
+   {
+    "id": 2697,
+    "official": 13789,
+    "name": "Entraveur majeur",
+    "level": 150,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "rpm",
+      "type": "E",
+      "min": 32,
+      "max": 32
+     },
+     {
+      "name": "epa",
+      "type": "E",
+      "min": -32,
+      "max": -32
+     }
+    ]
+   },
+   {
+    "id": 2264,
+    "official": 11858,
+    "name": "Gwo Tofu Ventripotent",
+    "level": 20,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 70,
+      "max": 70
+     },
+     {
+      "name": "rpm",
+      "type": "E",
+      "min": 40,
+      "max": 40
+     }
+    ]
+   }
+  ],
+  "cloths": [
+   {
+    "id": 245,
+    "name": "Panoplie d'Ogivol",
+    "pieces": 3,
+    "effects": [
+     {
+      "name": "vi",
+      "value": 100
+     },
+     {
+      "name": "fo",
+      "value": 60
+     },
+     {
+      "name": "ch",
+      "value": 60
+     },
+     {
+      "name": "ag",
+      "value": 60
+     },
+     {
+      "name": "cc",
+      "value": 10
+     },
+     {
+      "name": "pa",
+      "value": 1
+     },
+     {
+      "name": "po",
+      "value": 1
+     },
+     {
+      "name": "ic",
+      "value": 1
+     },
+     {
+      "name": "dnf",
+      "value": 15
+     },
+     {
+      "name": "dtf",
+      "value": 15
+     },
+     {
+      "name": "def",
+      "value": 15
+     },
+     {
+      "name": "daf",
+      "value": 15
+     },
+     {
+      "name": "pp",
+      "value": 20
+     },
+     {
+      "name": "ii",
+      "value": 300
+     },
+     {
+      "name": "rc",
+      "value": 30
+     },
+     {
+      "name": "rfp",
+      "value": 7
+     },
+     {
+      "name": "rap",
+      "value": 7
+     }
+    ]
+   },
+   {
+    "id": 471,
+    "name": "Panoplie Lunaire",
+    "pieces": 3,
+    "effects": [
+     {
+      "name": "pu",
+      "value": 100
+     },
+     {
+      "name": "pa",
+      "value": 1
+     },
+     {
+      "name": "po",
+      "value": 1
+     },
+     {
+      "name": "dnf",
+      "value": 10
+     },
+     {
+      "name": "dtf",
+      "value": 15
+     },
+     {
+      "name": "dff",
+      "value": 12
+     },
+     {
+      "name": "def",
+      "value": 12
+     },
+     {
+      "name": "daf",
+      "value": 10
+     },
+     {
+      "name": "ii",
+      "value": 1000
+     },
+     {
+      "name": "fu",
+      "value": 30
+     },
+     {
+      "name": "rpa",
+      "value": 30
+     },
+     {
+      "name": "rpm",
+      "value": 30
+     }
+    ]
+   },
+   {
+    "id": 1045,
+    "name": "Panoplie de Culbutœuf",
+    "pieces": 3,
+    "effects": [
+     {
+      "name": "fo",
+      "value": 50
+     },
+     {
+      "name": "ch",
+      "value": 50
+     },
+     {
+      "name": "ag",
+      "value": 50
+     },
+     {
+      "name": "cc",
+      "value": 18
+     },
+     {
+      "name": "pa",
+      "value": 1
+     },
+     {
+      "name": "po",
+      "value": 1
+     },
+     {
+      "name": "dnf",
+      "value": 15
+     },
+     {
+      "name": "dtf",
+      "value": 15
+     },
+     {
+      "name": "def",
+      "value": 15
+     },
+     {
+      "name": "daf",
+      "value": 15
+     },
+     {
+      "name": "dp",
+      "value": 30
+     }
+    ]
+   }
+  ],
+  "fmGlobal": {
+   "pm": 1,
+   "po": 1
+  },
+  "fmWeapon": null,
+  "fmStealWeapon": null,
+  "fmHealWeapon": null,
+  "fmItems": {},
+  "stuffStats": {
+   "scroll_vi": 100,
+   "scroll_sa": 100,
+   "scroll_fo": 100,
+   "scroll_in": 100,
+   "scroll_ch": 100,
+   "scroll_ag": 100,
+   "base_vi": 0,
+   "base_sa": 0,
+   "base_fo": 265,
+   "base_in": 0,
+   "base_ch": 266,
+   "base_ag": 0
+  },
+  "user": null
+ },
+ {
+  "_reconstructed": "Reconstruit à partir du fixture compact ../stuff-23428299.json pour reproduire la forme RÉELLE de GET https://www.dofusbook.net/api/stuffs/dofus/public/23428299 (DOFUS.md §10.3). Repris tels quels du fixture : stuff.stuffCarac/stuffFm/stuffFmItem, items[].official/name/weapon, et les effets [code, type, min, max] devenus {name: code, type, min, max} SANS réordonner min/max (malus : min = valeur la plus proche de 0, comme DofusBook). Ajoutés : items[].id = l'id DofusBook de stuffItem pour l'emplacement ; items[].level lu dans NOTRE dataset (objets identiques). Supposés, non observés : fmGlobal/fmWeapon/fmStealWeapon/fmHealWeapon/fmItems recopient stuff.stuffFm / stuffFmItem ; stuffStats recopie stuffCarac ; cloths réduit à {id, name, pieces, effects} des paliers actifs ; user retiré. Ce fixture compact n'avait pas stuffItem : ids DofusBook repris de stuff-23428650 pour les objets communs (236, 1241, 2829), ids FICTIFS 9000001+ pour les autres.",
+  "stuff": {
+   "id": 23428299,
+   "name": "Bram Pelle Xa",
+   "character_class": 17,
+   "character_level": 200,
+   "tags": [],
+   "stuffItem": {
+    "ch": 9000009,
+    "ca": 9000007,
+    "am": 9000003,
+    "a1": 9000001,
+    "a2": 9000002,
+    "ce": 9000008,
+    "bo": 9000005,
+    "ar": 9000004,
+    "br": 9000006,
+    "fa": 9000016,
+    "mo": null,
+    "d1": 1241,
+    "d2": 9000011,
+    "d3": 236,
+    "d4": 2829,
+    "d5": 9000014,
+    "d6": 9000015
+   },
+   "stuffCarac": {
+    "scroll_vi": 100,
+    "scroll_sa": 100,
+    "scroll_fo": 100,
+    "scroll_in": 100,
+    "scroll_ch": 100,
+    "scroll_ag": 100,
+    "base_vi": 0,
+    "base_sa": 0,
+    "base_fo": 0,
+    "base_in": 241,
+    "base_ch": 1,
+    "base_ag": 290
+   },
+   "stuffFm": {
+    "fm": {},
+    "caracs": "",
+    "values": "",
+    "weapon": "df-100",
+    "steal": "va-100",
+    "heal": null
+   },
+   "stuffFmItem": {
+    "a1": {
+     "pm": 1,
+     "cc": 7
+    },
+    "a2": {
+     "dc": 8
+    },
+    "am": {
+     "cc": 8
+    },
+    "ar": {
+     "dc": 8
+    },
+    "bo": {
+     "dm": 1
+    },
+    "br": {
+     "dc": 8
+    },
+    "ca": {
+     "dm": 1
+    },
+    "ce": {
+     "pa": 1
+    },
+    "ch": {
+     "dc": 8
+    },
+    "d1": {},
+    "d2": {},
+    "d3": {},
+    "d4": {},
+    "d5": {},
+    "d6": {
+     "dmg": 20
+    },
+    "fa": {},
+    "mo": {}
+   }
+  },
+  "items": [
+   {
+    "id": 9000001,
+    "official": 13642,
+    "name": "Anneau de Padgref",
+    "level": 197,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 71,
+      "max": 100
+     },
+     {
+      "name": "in",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     },
+     {
+      "name": "po",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "ic",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "ta",
+      "type": "E",
+      "min": -4,
+      "max": -6
+     },
+     {
+      "name": "epm",
+      "type": "E",
+      "min": -3,
+      "max": -4
+     },
+     {
+      "name": "dc",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     },
+     {
+      "name": "rep",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "rt",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "ra",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     }
+    ]
+   },
+   {
+    "id": 9000002,
+    "official": 21223,
+    "name": "Crocanneau",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 251,
+      "max": 300
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 16,
+      "max": 25
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 21,
+      "max": 40
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 3,
+      "max": 5
+     },
+     {
+      "name": "pa",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "rc",
+      "type": "E",
+      "min": 11,
+      "max": 20
+     },
+     {
+      "name": "rp",
+      "type": "E",
+      "min": 11,
+      "max": 20
+     }
+    ]
+   },
+   {
+    "id": 9000003,
+    "official": 14094,
+    "name": "Amulette du Strigide",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 351,
+      "max": 400
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 51,
+      "max": 70
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     },
+     {
+      "name": "pa",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "ta",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "epa",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     },
+     {
+      "name": "dc",
+      "type": "E",
+      "min": 16,
+      "max": 25
+     },
+     {
+      "name": "rc",
+      "type": "E",
+      "min": -16,
+      "max": -20
+     },
+     {
+      "name": "rtp",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "rap",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     }
+    ]
+   },
+   {
+    "id": 9000004,
+    "official": 12112,
+    "name": "Pelle du Professeur Xa",
+    "level": 191,
+    "category_type": "W",
+    "effects": [
+     {
+      "name": "dn",
+      "type": "D",
+      "min": 15,
+      "max": 21
+     },
+     {
+      "name": "vn",
+      "type": "D",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "pac",
+      "type": "U",
+      "min": -1,
+      "max": -1
+     },
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 151,
+      "max": 200
+     },
+     {
+      "name": "fo",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "in",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 5
+     },
+     {
+      "name": "pa",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 11,
+      "max": 20
+     },
+     {
+      "name": "fu",
+      "type": "E",
+      "min": 4,
+      "max": 5
+     },
+     {
+      "name": "rpa",
+      "type": "E",
+      "min": 4,
+      "max": 5
+     },
+     {
+      "name": "rap",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     }
+    ],
+    "weapon": {
+     "pa_cost": 3,
+     "po_min": 1,
+     "po_max": 1,
+     "cc_rate": 0,
+     "cc_bonus": 5,
+     "cc_hits": 3,
+     "hits_count": 2,
+     "hits_lines": 2
+    }
+   },
+   {
+    "id": 9000005,
+    "official": 13643,
+    "name": "Geta de Padgref",
+    "level": 196,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 101,
+      "max": 150
+     },
+     {
+      "name": "in",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 6
+     },
+     {
+      "name": "pm",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     },
+     {
+      "name": "so",
+      "type": "E",
+      "min": 8,
+      "max": 12
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "ta",
+      "type": "E",
+      "min": -6,
+      "max": -8
+     },
+     {
+      "name": "epm",
+      "type": "E",
+      "min": -4,
+      "max": -6
+     },
+     {
+      "name": "dc",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "dp",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "rnp",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "rfp",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     }
+    ]
+   },
+   {
+    "id": 9000006,
+    "official": 21225,
+    "name": "Croclier",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 201,
+      "max": 250
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 41,
+      "max": 50
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 4,
+      "max": 7
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": 601,
+      "max": 800
+     },
+     {
+      "name": "ta",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "epm",
+      "type": "E",
+      "min": 9,
+      "max": 12
+     },
+     {
+      "name": "rep",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     }
+    ]
+   },
+   {
+    "id": 9000007,
+    "official": 17584,
+    "name": "Cape d'Atcham",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 301,
+      "max": 350
+     },
+     {
+      "name": "in",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ch",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "ag",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 40
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 3,
+      "max": 4
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 9,
+      "max": 12
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 9,
+      "max": 12
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 9,
+      "max": 12
+     },
+     {
+      "name": "pp",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "fu",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "rpa",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "dc",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "rtp",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     }
+    ]
+   },
+   {
+    "id": 9000008,
+    "official": 14095,
+    "name": "Ceinture du Strigide",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 301,
+      "max": 350
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 31,
+      "max": 50
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "so",
+      "type": "E",
+      "min": 5,
+      "max": 7
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": 301,
+      "max": 400
+     },
+     {
+      "name": "ta",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dc",
+      "type": "E",
+      "min": 11,
+      "max": 15
+     },
+     {
+      "name": "rc",
+      "type": "E",
+      "min": -16,
+      "max": -25
+     },
+     {
+      "name": "rnp",
+      "type": "E",
+      "min": 6,
+      "max": 8
+     }
+    ]
+   },
+   {
+    "id": 9000009,
+    "official": 20359,
+    "name": "Couronne de Brâm Barbe-Monde",
+    "level": 200,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "vi",
+      "type": "E",
+      "min": 351,
+      "max": 400
+     },
+     {
+      "name": "sa",
+      "type": "E",
+      "min": 41,
+      "max": 60
+     },
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 61,
+      "max": 80
+     },
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "ds",
+      "type": "E",
+      "min": -5,
+      "max": -5
+     },
+     {
+      "name": "dw",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "ii",
+      "type": "E",
+      "min": -200,
+      "max": -200
+     },
+     {
+      "name": "epm",
+      "type": "E",
+      "min": 16,
+      "max": 20
+     },
+     {
+      "name": "rd",
+      "type": "E",
+      "min": 7,
+      "max": 10
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 11360,
+      "max": 1
+     }
+    ]
+   },
+   {
+    "id": 1241,
+    "official": 7754,
+    "name": "Dofus Ocre",
+    "level": 160,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "pa",
+      "type": "E",
+      "min": 1,
+      "max": 1
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 8394,
+      "max": 1
+     },
+     {
+      "name": "at",
+      "type": "O",
+      "min": 185,
+      "max": 185
+     }
+    ]
+   },
+   {
+    "id": 9000011,
+    "official": 739,
+    "name": "Dofus Turquoise",
+    "level": 160,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 10,
+      "max": 10
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 5952,
+      "max": 1
+     },
+     {
+      "name": "at",
+      "type": "O",
+      "min": 184,
+      "max": 184
+     }
+    ]
+   },
+   {
+    "id": 236,
+    "official": 694,
+    "name": "Dofus Pourpre",
+    "level": 110,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "pu",
+      "type": "E",
+      "min": 80,
+      "max": 80
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 8395,
+      "max": 1
+     },
+     {
+      "name": "at",
+      "type": "O",
+      "min": 186,
+      "max": 186
+     }
+    ]
+   },
+   {
+    "id": 2829,
+    "official": 7043,
+    "name": "Dofus des Glaces",
+    "level": 180,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "dnf",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "dtf",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "dff",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "def",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     },
+     {
+      "name": "daf",
+      "type": "E",
+      "min": 25,
+      "max": 25
+     }
+    ]
+   },
+   {
+    "id": 9000014,
+    "official": 7114,
+    "name": "Dofus Ébène",
+    "level": 180,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "fu",
+      "type": "E",
+      "min": 40,
+      "max": 40
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 18629,
+      "max": 1
+     },
+     {
+      "name": "at",
+      "type": "O",
+      "min": 182,
+      "max": 182
+     }
+    ]
+   },
+   {
+    "id": 9000015,
+    "official": 7112,
+    "name": "Dofus Tacheté",
+    "level": 180,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "rc",
+      "type": "E",
+      "min": 30,
+      "max": 30
+     },
+     {
+      "name": "sp",
+      "type": "O",
+      "min": 18888,
+      "max": 1
+     }
+    ]
+   },
+   {
+    "id": 9000016,
+    "official": 13673,
+    "name": "Kokulte",
+    "level": 20,
+    "category_type": "E",
+    "effects": [
+     {
+      "name": "cc",
+      "type": "E",
+      "min": 15,
+      "max": 15
+     },
+     {
+      "name": "dc",
+      "type": "E",
+      "min": 40,
+      "max": 40
+     }
+    ]
+   }
+  ],
+  "cloths": [
+   {
+    "id": 260,
+    "name": "Panoplie de Padgref",
+    "pieces": 2,
+    "effects": [
+     {
+      "name": "in",
+      "value": 30
+     },
+     {
+      "name": "ag",
+      "value": 30
+     },
+     {
+      "name": "cc",
+      "value": 8
+     },
+     {
+      "name": "dc",
+      "value": 10
+     }
+    ]
+   },
+   {
+    "id": 274,
+    "name": "Panoplie du Strigide",
+    "pieces": 2,
+    "effects": [
+     {
+      "name": "vi",
+      "value": 100
+     },
+     {
+      "name": "pu",
+      "value": 50
+     },
+     {
+      "name": "ta",
+      "value": 15
+     },
+     {
+      "name": "epa",
+      "value": 10
+     },
+     {
+      "name": "dc",
+      "value": 20
+     }
+    ]
+   },
+   {
+    "id": 946,
+    "name": "Panoplie de Crocuzko",
+    "pieces": 2,
+    "effects": [
+     {
+      "name": "pu",
+      "value": 60
+     },
+     {
+      "name": "cc",
+      "value": 3
+     },
+     {
+      "name": "ta",
+      "value": 10
+     },
+     {
+      "name": "epm",
+      "value": 10
+     },
+     {
+      "name": "rc",
+      "value": 10
+     },
+     {
+      "name": "rp",
+      "value": 10
+     }
+    ]
+   }
+  ],
+  "fmGlobal": {},
+  "fmWeapon": "df-100",
+  "fmStealWeapon": "va-100",
+  "fmHealWeapon": null,
+  "fmItems": {
+   "a1": {
+    "pm": 1,
+    "cc": 7
+   },
+   "a2": {
+    "dc": 8
+   },
+   "am": {
+    "cc": 8
+   },
+   "ar": {
+    "dc": 8
+   },
+   "bo": {
+    "dm": 1
+   },
+   "br": {
+    "dc": 8
+   },
+   "ca": {
+    "dm": 1
+   },
+   "ce": {
+    "pa": 1
+   },
+   "ch": {
+    "dc": 8
+   },
+   "d1": {},
+   "d2": {},
+   "d3": {},
+   "d4": {},
+   "d5": {},
+   "d6": {
+    "dmg": 20
+   },
+   "fa": {},
+   "mo": {}
+  },
+  "stuffStats": {
+   "scroll_vi": 100,
+   "scroll_sa": 100,
+   "scroll_fo": 100,
+   "scroll_in": 100,
+   "scroll_ch": 100,
+   "scroll_ag": 100,
+   "base_vi": 0,
+   "base_sa": 0,
+   "base_fo": 0,
+   "base_in": 241,
+   "base_ch": 1,
+   "base_ag": 290
+  },
+  "user": null
+ }
+]

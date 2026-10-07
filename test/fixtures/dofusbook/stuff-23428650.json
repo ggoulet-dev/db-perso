@@ -1,0 +1,85 @@
+{
+  "_about": {
+    "source": "https://www.dofusbook.net/api/stuffs/dofus/public/23428650 + page rendue /desktop/fr/equipement/23428650-terre-eau-lvl-200---r/objets",
+    "fetchedAt": "2026-10-06",
+    "dofusbookDataVersion": "3.7",
+    "notes": [
+      "Stuff PUBLIC d'un autre utilisateur ; l'objet `user` (profil de l'auteur) a été retiré volontairement.",
+      "Forme compacte : items[].effects = [code DofusBook, type, min, max] ; cloths = bonus ACTIFS seulement (DofusBook ne renvoie que le palier porté).",
+      "expectedTotals = valeurs affichées par DofusBook sur la page rendue, jets au maximum (comportement par défaut de DofusBook).",
+      "Forme `private` (stuffs de l'utilisateur) non observée."
+    ]
+  },
+  "stuff": {
+    "id": 23428650,
+    "name": "Terre Eau LvL 200 - Ret PM",
+    "character_class": 1,
+    "character_level": 200,
+    "tags": ["ter", "eau", "pvm", "rpm"],
+    "stuffCarac": {
+      "scroll_vi": 100, "scroll_sa": 100, "scroll_fo": 100, "scroll_in": 100, "scroll_ch": 100, "scroll_ag": 100,
+      "base_vi": 0, "base_sa": 0, "base_fo": 265, "base_in": 0, "base_ch": 266, "base_ag": 0
+    },
+    "stuffFm": { "fm": { "pm": 1, "po": 1 }, "caracs": "pm,po", "values": "1,1", "weapon": null, "steal": null, "heal": null },
+    "stuffFmItem": null,
+    "stuffItem": {
+      "a1": 4631, "a2": 6742, "am": 4630, "ar": 6743, "bo": 4629, "br": 6744, "ca": 2579, "ce": 2580, "ch": 2578,
+      "d1": 5162, "d2": 1040, "d3": 236, "d4": 2829, "d5": 1241, "d6": 2697, "fa": 2264, "mo": null
+    },
+    "fmItems": {},
+    "stuffStats": "identique à stuffCarac (scroll_* / base_*) : PAS des totaux calculés"
+  },
+  "items": [
+    { "slot": "a1", "official": 21228, "name": "Anneau Lunaire", "effects": [["vi","E",201,250],["sa","E",21,30],["pu","E",31,50],["ic","E",1,1],["dtf","E",11,15],["pp","E",11,15],["ii","E",101,150],["rpa","E",6,10]] },
+    { "slot": "a2", "official": 32234, "name": "Anneau de Culbutœuf", "effects": [["vi","E",201,250],["fo","E",41,50],["ch","E",41,50],["ag","E",41,50],["dnf","E",7,10],["dtf","E",7,10],["def","E",7,10],["daf","E",7,10],["pp","E",7,10],["dp","E",11,15],["rtp","E",5,8]] },
+    { "slot": "am", "official": 21227, "name": "Collier Lunaire", "effects": [["vi","E",251,300],["sa","E",21,40],["pu","E",51,70],["pa","E",1,1],["dnf","E",16,20],["daf","E",16,20],["pp","E",16,20],["ii","E",201,250],["fu","E",6,10],["rpm","E",6,10]] },
+    { "slot": "ar", "official": 32235, "name": "Arc de Culbutœuf", "weapon": { "pa_cost": 5, "po_min": 3, "po_max": 7, "cc_rate": 0, "cc_bonus": 20, "cc_hits": 6 }, "effects": [["dn","D",34,41],["ve","D",7,9],["va","D",7,9],["vi","E",351,400],["fo","E",51,70],["ch","E",51,70],["ag","E",51,70],["sa","E",21,30],["dnf","E",11,15],["dtf","E",11,15],["def","E",11,15],["daf","E",11,15],["pp","E",11,15],["dp","E",16,20],["rap","E",7,10]] },
+    { "slot": "bo", "official": 21226, "name": "Bottes Lunaires", "effects": [["vi","E",301,350],["sa","E",31,40],["pu","E",51,70],["pm","E",1,1],["dff","E",11,18],["def","E",11,18],["so","E",4,8],["ii","E",301,400],["rpa","E",6,10],["rpm","E",6,10],["epa","E",4,6]] },
+    { "slot": "br", "official": 32236, "name": "Disque de Culbutœuf", "effects": [["vi","E",201,250],["fo","E",41,60],["ch","E",41,60],["ag","E",41,60],["sa","E",31,40],["po","E",1,1],["pp","E",11,15],["dp","E",16,25],["rtp","E",4,7],["rfp","E",9,12]] },
+    { "slot": "ca", "official": 13131, "name": "Cape d'Ogivol", "effects": [["vi","E",251,300],["fo","E",41,60],["ch","E",41,60],["ag","E",41,60],["sa","E",31,40],["cc","E",2,3],["po","E",1,1],["dnf","E",6,8],["dtf","E",6,8],["def","E",6,8],["daf","E",6,8],["pp","E",16,20],["rc","E",7,10],["rf","E",8,12]] },
+    { "slot": "ce", "official": 13132, "name": "Ceinture d'Ogivol", "effects": [["vi","E",251,300],["fo","E",31,50],["ch","E",31,50],["ag","E",31,50],["sa","E",31,40],["cc","E",4,5],["dnf","E",7,10],["dtf","E",7,10],["def","E",7,10],["daf","E",7,10],["pp","E",7,10],["ta","E",4,5],["rpa","E",4,5],["rtp","E",5,7],["ra","E",11,15]] },
+    { "slot": "ch", "official": 13130, "name": "Coiffe d'Ogivol", "effects": [["vi","E",301,350],["fo","E",41,60],["ch","E",41,60],["ag","E",41,60],["sa","E",41,60],["cc","E",4,6],["ic","E",1,1],["dnf","E",8,12],["dtf","E",8,12],["def","E",8,12],["daf","E",8,12],["ii","E",201,300],["rpm","E",4,6],["rep","E",7,10]] },
+    { "slot": "d1", "official": 22014, "name": "Espryt", "effects": [["rpa","E",20,20],["rpm","E",20,20],["epa","E",-20,-20],["epm","E",-20,-20],["sp","O",14933,1]] },
+    { "slot": "d2", "official": 6980, "name": "Dofus Vulbis", "effects": [["pm","E",1,1],["sp","O",8396,1]] },
+    { "slot": "d3", "official": 694, "name": "Dofus Pourpre", "effects": [["pu","E",80,80],["sp","O",8395,1],["at","O",186,186]] },
+    { "slot": "d4", "official": 7043, "name": "Dofus des Glaces", "effects": [["dnf","E",25,25],["dtf","E",25,25],["dff","E",25,25],["def","E",25,25],["daf","E",25,25]] },
+    { "slot": "d5", "official": 7754, "name": "Dofus Ocre", "effects": [["pa","E",1,1],["sp","O",8394,1],["at","O",185,185]] },
+    { "slot": "d6", "official": 13789, "name": "Entraveur majeur", "effects": [["rpm","E",32,32],["epa","E",-32,-32]] },
+    { "slot": "fa", "official": 11858, "name": "Gwo Tofu Ventripotent", "effects": [["pu","E",70,70],["rpm","E",40,40]] }
+  ],
+  "activeSetBonuses": [
+    { "id": 245, "name": "Panoplie d'Ogivol", "pieces": 3, "effects": [["vi",100],["fo",60],["ch",60],["ag",60],["cc",10],["pa",1],["po",1],["ic",1],["dnf",15],["dtf",15],["def",15],["daf",15],["pp",20],["ii",300],["rc",30],["rfp",7],["rap",7]] },
+    { "id": 471, "name": "Panoplie Lunaire", "pieces": 3, "effects": [["pu",100],["pa",1],["po",1],["dnf",10],["dtf",15],["dff",12],["def",12],["daf",10],["ii",1000],["fu",30],["rpa",30],["rpm",30]] },
+    { "id": 1045, "name": "Panoplie de Culbutœuf", "pieces": 3, "effects": [["fo",50],["ch",50],["ag",50],["cc",18],["pa",1],["po",1],["dnf",15],["dtf",15],["def",15],["daf",15],["dp",30]] }
+  ],
+  "setBonusLabelsSeenOnPage": {
+    "dnf": "Dmg Neutre", "dtf": "Dmg Terre", "dff": "Dmg Feu", "def": "Dmg Eau", "daf": "Dmg Air",
+    "rc": "Rés. Critique", "rfp": "% Rés. Feu", "rap": "% Rés. Air", "ii": "Initiative", "pp": "Prospection",
+    "cc": "% Critique", "pa": "PA", "po": "PO", "ic": "Invocation", "pu": "Puissance", "fu": "Fuite",
+    "rpa": "Retrait PA", "rpm": "Retrait PM", "dp": "Dmg Poussée"
+  },
+  "expectedTotals": {
+    "pdv": 4000, "prospection": 307, "pa": 12, "pm": 6, "po": 6, "initiative": 4711, "critique": 42, "invocations": 4, "soins": 8,
+    "vitalite": 2950, "sagesse": 420, "force": 825, "intelligence": 100, "chance": 826, "agilite": 560,
+    "puissance": 440, "fuite": 96, "esquivePA": -4, "esquivePM": 22, "pods": 5125, "tacle": 61, "retraitPA": 117, "retraitPM": 190,
+    "doNeutre": 140, "doTerre": 140, "doFeu": 55, "doEau": 140, "doAir": 140, "doCritique": 0, "doPoussee": 90,
+    "pctDoArmes": 0, "pctDoSorts": 0, "pctDoMelee": 0, "pctDoDistance": 0, "dommages": 0,
+    "reNeutre": 0, "pctReNeutre": 0, "reTerre": 0, "pctReTerre": 22, "reFeu": 12, "pctReFeu": 19, "reEau": 0, "pctReEau": 10,
+    "reAir": 15, "pctReAir": 17, "reCritique": 40, "rePoussee": 0, "pctReMelee": 0, "pctReDistance": 0, "pctReArmes": 0,
+    "_effectiveStatsShownForDamage": { "force": 1265, "intelligence": 540, "chance": 1266, "agilite": 1000, "_rule": "carac + puissance" }
+  },
+  "derivedRulesInferredFromThisStuff": {
+    "_status": "déduites en recalculant à la main les totaux ci-dessus (tous retombent juste) ; règles appliquées par DofusBook 3.7, pas vérifiées en jeu",
+    "pdv": "50 + 5 × niveau + Vitalité",
+    "paBase": "7 au niveau 200 (6 avant le niveau 100 : non vérifié ici)",
+    "pmBase": 3, "poBase": 0, "invocationsBase": 1, "critiqueBase": 0,
+    "prospection": "100 + floor(Chance / 10) + bonus",
+    "initiative": "Force + Intelligence + Chance + Agilité + bonus",
+    "pods": "1000 + 5 × Force + bonus",
+    "tacle": "floor(Agilité / 10) + bonus",
+    "fuite": "floor(Agilité / 10) + bonus",
+    "retraitEtEsquivePAPM": "floor(Sagesse / 10) + bonus",
+    "caracs": "base_* = valeur de carac (pas des points) ; coût par paliers calculé sur la base seule (base_fo 265 → 495 pts, base_ch 266 → 498 pts, total 993 ≤ 995) ; parchemins hors paliers",
+    "forgemagieGlobale": "stuffFm.fm s'ajoute aux totaux (PM +1, PO +1 affichés en « +1 »)"
+  }
+}

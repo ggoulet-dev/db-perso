@@ -1,0 +1,69 @@
+{
+  "_about": {
+    "source": "https://www.dofusbook.net/api/stuffs/dofus/public/23428299 + page rendue /desktop/fr/equipement/23428299-bram-pelle-xa/objets",
+    "fetchedAt": "2026-10-06",
+    "dofusbookDataVersion": "3.7",
+    "notes": [
+      "Stuff PUBLIC d'un autre utilisateur, choisi parce qu'il a de la forgemagie par objet (stuffFmItem) et une FM d'arme ; objet `user` retiré.",
+      "items[].effects = [code DofusBook, type, min, max] tel que DofusBook les stocke : pour un malus, min est la valeur la plus proche de 0 (ex. ta -4..-6).",
+      "fmItems === stuffFmItem dans la réponse. Sémantique vérifiée sur les totaux rendus : code présent sur l'objet → valeur ABSOLUE de la ligne (jet / over) ; code absent → exo ajouté.",
+      "stuffFm.weapon / steal = FM élémentaire de l'arme au format \"<code>-<valeur>\" (df-100 : dommages passés en Feu ; va-100 : vol passé en Air). Effet sur les coups d'arme non vérifié.",
+      "expectedTotals = valeurs affichées par DofusBook, jets parfaits sauf lignes forgemagées."
+    ]
+  },
+  "stuff": {
+    "id": 23428299,
+    "name": "Bram Pelle Xa",
+    "character_class": 17,
+    "character_level": 200,
+    "stuffCarac": {
+      "scroll_vi": 100, "scroll_sa": 100, "scroll_fo": 100, "scroll_in": 100, "scroll_ch": 100, "scroll_ag": 100,
+      "base_vi": 0, "base_sa": 0, "base_fo": 0, "base_in": 241, "base_ch": 1, "base_ag": 290
+    },
+    "stuffFm": { "fm": {}, "caracs": "", "values": "", "weapon": "df-100", "steal": "va-100", "heal": null },
+    "stuffFmItem": {
+      "a1": { "pm": 1, "cc": 7 }, "a2": { "dc": 8 }, "am": { "cc": 8 }, "ar": { "dc": 8 }, "bo": { "dm": 1 },
+      "br": { "dc": 8 }, "ca": { "dm": 1 }, "ce": { "pa": 1 }, "ch": { "dc": 8 },
+      "d1": {}, "d2": {}, "d3": {}, "d4": {}, "d5": {}, "d6": { "dmg": 20 }, "fa": {}, "mo": {}
+    }
+  },
+  "items": [
+    { "slot": "a1", "official": 13642, "name": "Anneau de Padgref", "effects": [["vi","E",71,100],["in","E",41,60],["ag","E",41,60],["sa","E",31,40],["cc","E",4,6],["po","E",1,1],["ic","E",1,1],["dff","E",5,7],["daf","E",5,7],["ta","E",-4,-6],["epm","E",-3,-4],["dc","E",8,12],["rep","E",6,8],["rt","E",7,10],["ra","E",7,10]] },
+    { "slot": "a2", "official": 21223, "name": "Crocanneau", "effects": [["vi","E",251,300],["sa","E",16,25],["pu","E",21,40],["cc","E",3,5],["pa","E",1,1],["rc","E",11,20],["rp","E",11,20]] },
+    { "slot": "am", "official": 14094, "name": "Amulette du Strigide", "effects": [["vi","E",351,400],["sa","E",31,40],["pu","E",51,70],["cc","E",4,6],["pa","E",1,1],["ta","E",11,15],["epa","E",4,6],["dc","E",16,25],["rc","E",-16,-20],["rtp","E",6,8],["rap","E",6,8]] },
+    { "slot": "ar", "official": 12112, "name": "Pelle du Professeur Xa", "weapon": { "pa_cost": 3, "po_min": 1, "po_max": 1, "cc_rate": 0, "cc_bonus": 5, "cc_hits": 3, "hits_count": 2, "hits_lines": 2 }, "effects": [["dn","D",15,21],["vn","D",5,7],["pac","U",-1,-1],["vi","E",151,200],["fo","E",31,50],["in","E",31,50],["ch","E",31,50],["cc","E",4,5],["pa","E",1,1],["dnf","E",6,8],["dtf","E",6,8],["dff","E",6,8],["def","E",6,8],["pp","E",11,20],["fu","E",4,5],["rpa","E",4,5],["rap","E",7,10]] },
+    { "slot": "bo", "official": 13643, "name": "Geta de Padgref", "effects": [["vi","E",101,150],["in","E",41,60],["ag","E",41,60],["sa","E",31,50],["cc","E",4,6],["pm","E",1,1],["dff","E",6,8],["daf","E",6,8],["so","E",8,12],["pp","E",16,20],["ta","E",-6,-8],["epm","E",-4,-6],["dc","E",16,20],["dp","E",11,15],["rnp","E",5,7],["rfp","E",5,7]] },
+    { "slot": "br", "official": 21225, "name": "Croclier", "effects": [["vi","E",201,250],["pu","E",41,50],["cc","E",4,7],["ii","E",601,800],["ta","E",11,15],["epm","E",9,12],["rep","E",11,15]] },
+    { "slot": "ca", "official": 17584, "name": "Cape d'Atcham", "effects": [["vi","E",301,350],["in","E",41,60],["ch","E",41,60],["ag","E",41,60],["sa","E",31,40],["cc","E",3,4],["dff","E",9,12],["def","E",9,12],["daf","E",9,12],["pp","E",11,15],["fu","E",5,7],["rpa","E",5,7],["dc","E",11,15],["rtp","E",7,10]] },
+    { "slot": "ce", "official": 14095, "name": "Ceinture du Strigide", "effects": [["vi","E",301,350],["sa","E",31,50],["pu","E",41,60],["cc","E",5,7],["dnf","E",7,10],["dtf","E",7,10],["dff","E",7,10],["def","E",7,10],["daf","E",7,10],["so","E",5,7],["ii","E",301,400],["ta","E",7,10],["dc","E",11,15],["rc","E",-16,-25],["rnp","E",6,8]] },
+    { "slot": "ch", "official": 20359, "name": "Couronne de Brâm Barbe-Monde", "effects": [["vi","E",351,400],["sa","E",41,60],["pu","E",61,80],["cc","E",7,10],["dnf","E",7,10],["dtf","E",7,10],["dff","E",7,10],["def","E",7,10],["daf","E",7,10],["ds","E",-5,-5],["dw","E",7,10],["ii","E",-200,-200],["epm","E",16,20],["rd","E",7,10],["sp","O",11360,1]] },
+    { "slot": "d1", "official": 7754, "name": "Dofus Ocre", "effects": [["pa","E",1,1],["sp","O",8394,1],["at","O",185,185]] },
+    { "slot": "d2", "official": 739, "name": "Dofus Turquoise", "effects": [["cc","E",10,10],["sp","O",5952,1],["at","O",184,184]] },
+    { "slot": "d3", "official": 694, "name": "Dofus Pourpre", "effects": [["pu","E",80,80],["sp","O",8395,1],["at","O",186,186]] },
+    { "slot": "d4", "official": 7043, "name": "Dofus des Glaces", "effects": [["dnf","E",25,25],["dtf","E",25,25],["dff","E",25,25],["def","E",25,25],["daf","E",25,25]] },
+    { "slot": "d5", "official": 7114, "name": "Dofus Ébène", "effects": [["fu","E",40,40],["sp","O",18629,1],["at","O",182,182]] },
+    { "slot": "d6", "official": 7112, "name": "Dofus Tacheté", "effects": [["rc","E",30,30],["sp","O",18888,1]] },
+    { "slot": "fa", "official": 13673, "name": "Kokulte", "effects": [["cc","E",15,15],["dc","E",40,40]] }
+  ],
+  "activeSetBonuses": [
+    { "id": 260, "name": "Panoplie de Padgref", "pieces": 2, "effects": [["in",30],["ag",30],["cc",8],["dc",10]] },
+    { "id": 274, "name": "Panoplie du Strigide", "pieces": 2, "effects": [["vi",100],["pu",50],["ta",15],["epa",10],["dc",20]] },
+    { "id": 946, "name": "Panoplie de Crocuzko", "pieces": 2, "effects": [["pu",60],["cc",3],["ta",10],["epm",10],["rc",10],["rp",10]] }
+  ],
+  "expectedTotals": {
+    "pdv": 3750, "prospection": 176, "pa": 12, "pm": 5, "po": 1, "initiative": 2562, "critique": 95, "invocations": 2, "soins": 19,
+    "vitalite": 2700, "sagesse": 405, "force": 150, "intelligence": 601, "chance": 211, "agilite": 600,
+    "puissance": 490, "fuite": 112, "esquivePA": 56, "esquivePM": 75, "pods": 1750, "tacle": 115, "retraitPA": 52, "retraitPM": 40,
+    "doNeutre": 73, "doTerre": 73, "doFeu": 100, "doEau": 85, "doAir": 92, "doCritique": 189, "doPoussee": 15,
+    "pctDoArmes": 10, "pctDoSorts": -5, "pctDoMelee": 2, "pctDoDistance": 0, "dommages": 20,
+    "reNeutre": 0, "pctReNeutre": 15, "reTerre": 10, "pctReTerre": 18, "reFeu": 0, "pctReFeu": 7, "reEau": 0, "pctReEau": 23,
+    "reAir": 10, "pctReAir": 18, "reCritique": 28, "rePoussee": 30, "pctReMelee": 0, "pctReDistance": 10, "pctReArmes": 0,
+    "_effectiveStatsShownForDamage": { "force": 640, "intelligence": 1091, "chance": 701, "agilite": 1090, "_rule": "carac + puissance" }
+  },
+  "rulesConfirmedByThisStuff": {
+    "jetParfait": "valeur la plus favorable au joueur : max pour un bonus, la plus proche de 0 pour un malus (tacle 115 et esquive PM 75 ne tombent juste qu'ainsi)",
+    "fmItem": "valeur absolue pour une ligne existante (cc 7 sur une ligne 4–6 = over), ajout pour une ligne absente (exo) ; critique 95 et dommages critiques 189 ne tombent juste qu'ainsi",
+    "dommagesGeneriques": "dmg (« Dommages ») s'ajoute à l'affichage Do Neutre/Terre/Feu/Eau/Air (Do Neutre 73 = 53 fixes + 20)",
+    "codesConfirmes": { "dm": "% Do Mêlée", "dw": "% Do Armes", "ds": "% Do Sorts", "rd": "% Ré Distance", "rp": "Ré Poussée", "rt": "Ré Terre (fixe)", "ra": "Ré Air (fixe)", "rnp": "% Ré Neutre", "rc": "Ré Critique", "dc": "Do Critique", "dmg": "Dommages", "so": "Soins" }
+  }
+}

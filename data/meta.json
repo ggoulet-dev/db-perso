@@ -1,0 +1,17 @@
+{
+  "source": "https://api.dofusdu.de",
+  "channel": "dofus3beta",
+  "lang": "fr",
+  "game_version": "3.7.3.3",
+  "release": "beta",
+  "update_stamp": "2026-10-01T18:52:08.635591806+02:00",
+  "synced_at": "2026-10-06T17:09:53.474Z",
+  "counts": {
+    "equipment": 4101,
+    "sets": 937
+  },
+  "coverage": {
+    "equipment_effects": 0.9943916118019995,
+    "set_bonuses": 1
+  }
+}

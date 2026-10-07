@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tmp
+.DS_Store
+
+# Dumps bruts dofusdude : régénérés par `npm run sync`
+data/*
+!data/meta.json

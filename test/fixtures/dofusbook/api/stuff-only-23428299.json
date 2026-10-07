@@ -1,0 +1,89 @@
+{
+ "id": 23428299,
+ "name": "Bram Pelle Xa",
+ "character_class": 17,
+ "character_level": 200,
+ "tags": [],
+ "stuffItem": {
+  "ch": 9000009,
+  "ca": 9000007,
+  "am": 9000003,
+  "a1": 9000001,
+  "a2": 9000002,
+  "ce": 9000008,
+  "bo": 9000005,
+  "ar": 9000004,
+  "br": 9000006,
+  "fa": 9000016,
+  "mo": null,
+  "d1": 1241,
+  "d2": 9000011,
+  "d3": 236,
+  "d4": 2829,
+  "d5": 9000014,
+  "d6": 9000015
+ },
+ "stuffCarac": {
+  "scroll_vi": 100,
+  "scroll_sa": 100,
+  "scroll_fo": 100,
+  "scroll_in": 100,
+  "scroll_ch": 100,
+  "scroll_ag": 100,
+  "base_vi": 0,
+  "base_sa": 0,
+  "base_fo": 0,
+  "base_in": 241,
+  "base_ch": 1,
+  "base_ag": 290
+ },
+ "stuffFm": {
+  "fm": {},
+  "caracs": "",
+  "values": "",
+  "weapon": "df-100",
+  "steal": "va-100",
+  "heal": null
+ },
+ "stuffFmItem": {
+  "a1": {
+   "pm": 1,
+   "cc": 7
+  },
+  "a2": {
+   "dc": 8
+  },
+  "am": {
+   "cc": 8
+  },
+  "ar": {
+   "dc": 8
+  },
+  "bo": {
+   "dm": 1
+  },
+  "br": {
+   "dc": 8
+  },
+  "ca": {
+   "dm": 1
+  },
+  "ce": {
+   "pa": 1
+  },
+  "ch": {
+   "dc": 8
+  },
+  "d1": {},
+  "d2": {},
+  "d3": {},
+  "d4": {},
+  "d5": {},
+  "d6": {
+   "dmg": 20
+  },
+  "fa": {},
+  "mo": {}
+ },
+ "_reconstructed": "Objet `stuff` seul (sans items[]), tel qu'on le copierait par erreur : l'import doit le refuser avec un message explicite."
+}
