@@ -150,7 +150,7 @@ function StuffEditor({ id, breeds }: { id: string; breeds: Breed[] }) {
             <>
               {build.source && <SourcePanel source={build.source} />}
               <CharacterPanel build={build} breeds={breeds} update={stuff.update} />
-              <SlotsPanel build={build} result={result} update={stuff.update} />
+              <SlotsPanel build={build} result={result} breed={breeds.find((b) => b.id === build.character.breedId)} update={stuff.update} />
               <CaracsPanel build={build} result={result} update={stuff.update} />
               <ExtrasPanel build={build} update={stuff.update} />
             </>

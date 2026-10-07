@@ -1,0 +1,101 @@
+{
+  "id": "nouveau-stuff",
+  "schemaVersion": 1,
+  "name": "Nouveau stuff",
+  "dataVersion": "3.7.3.3",
+  "character": {
+    "breedId": 9,
+    "level": 200,
+    "subscriber": true
+  },
+  "caracs": {
+    "base": {
+      "vitality": 0,
+      "wisdom": 0,
+      "strength": 0,
+      "intelligence": 0,
+      "chance": 0,
+      "agility": 0
+    },
+    "scrolls": {
+      "vitality": 0,
+      "wisdom": 0,
+      "strength": 0,
+      "intelligence": 0,
+      "chance": 0,
+      "agility": 0
+    }
+  },
+  "slots": {
+    "ch": {
+      "itemId": 32114,
+      "itemName": "Ardeur d'Oto Mustam",
+      "rolls": [],
+      "exos": []
+    },
+    "ca": {
+      "itemId": 15696,
+      "itemName": "Capchalot",
+      "rolls": [],
+      "exos": []
+    },
+    "am": {
+      "itemId": 14090,
+      "itemName": "Amulette Cryochrone",
+      "rolls": [],
+      "exos": []
+    },
+    "a1": {
+      "itemId": 25218,
+      "itemName": "Alliance du Pandamonium",
+      "rolls": [],
+      "exos": []
+    },
+    "a2": {
+      "itemId": 30943,
+      "itemName": "Alliance du Dark Vlad",
+      "rolls": [],
+      "exos": []
+    },
+    "ce": {
+      "itemId": 17108,
+      "itemName": "Ceinture de Kongoku",
+      "rolls": [],
+      "exos": []
+    },
+    "bo": {
+      "itemId": 17575,
+      "itemName": "Bottes de la Dame du Hasard",
+      "rolls": [],
+      "exos": []
+    },
+    "ar": {
+      "itemId": 32244,
+      "itemName": "Aiguille de Psikopompe",
+      "rolls": [],
+      "exos": []
+    },
+    "br": {
+      "itemId": 19259,
+      "itemName": "Bouclier Bontarien",
+      "rolls": [],
+      "exos": []
+    },
+    "fa": {
+      "itemId": 11955,
+      "itemName": "Bulbisou",
+      "rolls": [],
+      "exos": []
+    },
+    "mo": null,
+    "d1": null,
+    "d2": null,
+    "d3": null,
+    "d4": null,
+    "d5": null,
+    "d6": null
+  },
+  "extras": [],
+  "createdAt": "2026-10-07T17:49:26.806Z",
+  "updatedAt": "2026-10-07T18:34:42.774Z"
+}

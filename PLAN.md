@@ -248,7 +248,7 @@ Fini quand :
 
 ## 4. Import DofusBook : ce qui est connu et ce qui manque
 
-Entrée attendue : la **réponse complète** de `GET /api/stuffs/dofus/{public|private}/{id}` (`stuff` + `items[]` + `cloths` + `fm*` + `stuffStats`). Elle peut être sauvegardée depuis l'onglet Réseau ou avec le script console de la conversation, en mettant `private` dans le chemin pour ses propres stuffs (connecté, les cookies partent automatiquement). Seule la forme **publique** a été observée ; la forme `private` est **non vérifiée**. Un objet `stuff` seul ne suffit pas : `stuffItem` ne contient que des ids DofusBook, et c'est `items[].official` (= `ankama_id`, vérifié sur 6744 → 32236) qui permet la résolution.
+Entrée attendue : la **réponse complète** de `GET /api/stuffs/dofus/{public|private}/{id}` (`stuff` + `items[]` + `cloths` + `fm*` + `stuffStats`). Elle peut être sauvegardée depuis l'onglet Réseau ou avec le script console de la conversation, en mettant `private` dans le chemin pour ses propres stuffs (connecté : la route `private` exige `Authorization: Bearer <JWT>` lu dans `localStorage.token`, les cookies seuls donnent 401 ; constaté le 2026-10-07). Seule la forme **publique** a été observée ; la forme `private` est **non vérifiée**. Un objet `stuff` seul ne suffit pas : `stuffItem` ne contient que des ids DofusBook, et c'est `items[].official` (= `ankama_id`, vérifié sur 6744 → 32236) qui permet la résolution.
 
 Correspondances :
 - `stuffItem.{ch ca am a1 a2 ce bo ar br fa mo d1..d6}` → nos `SlotKey`, identiques ;

@@ -364,6 +364,8 @@ Tout ce qui suit a été constaté le 2026-10-06 dans un navigateur, sauf mentio
 | `search/{game}/stuffs` | ? | recherche de stuffs (GET sans paramètres → 500, POST `{}` → 404, format *non vérifié*) |
 | `stuffs/{game}/private/…`, `favorites`, `folders`, `boosts/stuff/{id}` | ❌ | espace de l'utilisateur connecté |
 
+- **Routes `private`** : authentification par header `Authorization: Bearer <JWT>`, pas par les cookies (`fetch` depuis la page avec `credentials: 'include'` → 401, constaté le 2026-10-07). La SPA garde le JWT dans `localStorage.token` et l'envoie via axios avec un header `x-lang`. `GET stuffs/{game}/private/` (sans id) liste les stuffs de l'utilisateur.
+
 - Des réponses portent `source: "cache"` ou `"database"`.
 - `cf-cache-status: DYNAMIC` sur `stuffs/dofus/public/latest` (seul endpoint vérifié) : réponse non mise en cache par Cloudflare.
 - Rate limit : *non vérifié*.

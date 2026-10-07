@@ -8,6 +8,9 @@
   --negative: #b42318;
   --hover: #f1eee7;
   --ok: #1a7f37;
+  --socket: #edebe4;
+  --socket-edge: #d3cfc6;
+  --glyph: #a09a8e;
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   line-height: 1.5;
   color: var(--text);
@@ -25,6 +28,9 @@
     --negative: #f97066;
     --hover: #272b31;
     --ok: #56d364;
+    --socket: #141619;
+    --socket-edge: #3a3f47;
+    --glyph: #5e6670;
   }
 }
 
@@ -671,68 +677,162 @@ h4 {
 
 /* Emplacements */
 
-.slot-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-  gap: 0.4rem;
-}
-
-.slot-tile {
+.slots-layout {
+  container-type: inline-size;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-width: 0;
-  padding: 0.35rem 0.5rem;
-  text-align: left;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
-.slot-tile.empty {
-  border-style: dashed;
+.doll {
+  --cell: 64px;
+  --gap: 6px;
+  display: grid;
+  flex: none;
+  grid-template-columns: var(--cell) minmax(0, 1fr) var(--cell);
+  grid-template-rows: repeat(6, var(--cell)) var(--cell);
+  gap: var(--gap);
+  width: calc(6 * var(--cell) + 5 * var(--gap));
 }
 
-.slot-tile.selected {
-  border-color: var(--accent);
-  box-shadow: inset 0 0 0 1px var(--accent);
-  background: var(--hover);
+.doll-col {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1 / span 6;
+  gap: var(--gap);
 }
 
-.slot-placeholder {
+.doll-row {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: var(--gap);
+}
+
+.socket {
+  position: relative;
   display: flex;
   flex: none;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  color: var(--muted);
-  font-size: 1.3rem;
+  width: var(--cell);
+  height: var(--cell);
+  padding: 0;
+  color: var(--glyph);
+  background: var(--socket);
+  border: 1px solid var(--socket-edge);
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgb(0 0 0 / 0.08);
+  transition: border-color 120ms, box-shadow 120ms, background-color 120ms, color 120ms;
 }
 
-.slot-text {
+.socket:hover:not(:disabled) {
+  color: var(--muted);
+  border-color: var(--muted);
+}
+
+.socket.selected {
+  color: var(--muted);
+  background: var(--surface);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.socket:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.socket .icon {
+  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.25));
+}
+
+.socket.mark-bad {
+  border-color: var(--negative);
+}
+
+.socket-mark {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  background: var(--negative);
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+}
+
+.mark-warn .socket-mark {
+  background: var(--accent);
+}
+
+.mark-note .socket-mark {
+  background: var(--muted);
+}
+
+.nameplate {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  grid-row: 1 / span 6;
+  gap: 0.75rem;
+  padding: 0.9rem 0.6rem 0.7rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.nameplate-class,
+.nameplate-focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 0;
-  line-height: 1.25;
+  max-width: 100%;
+  line-height: 1.3;
 }
 
-.slot-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.nameplate-class img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.3rem;
+  object-fit: contain;
 }
 
-.slot-flags:empty {
-  display: none;
+.nameplate-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-.slot-flags .badge {
-  margin-left: 0;
-  margin-right: 0.25rem;
-}
-
-.slot-panel {
-  margin-top: 1rem;
-  padding-top: 1rem;
+.nameplate-focus {
+  flex: 1 1 auto;
+  justify-content: center;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.6rem 0;
   border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+
+.slot-workspace {
+  flex: 1 1 22rem;
+  min-width: 0;
+}
+
+@container (min-width: 50rem) {
+  .slot-workspace {
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--border);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socket {
+    transition: none;
+  }
 }
 
 .slot-head {
@@ -765,7 +865,7 @@ h4 {
 
 .picker-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 0.3rem 0.75rem;
   max-height: 26rem;
   margin: 0;
